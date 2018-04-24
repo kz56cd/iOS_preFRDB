@@ -17,6 +17,7 @@
 		EA148BB6208F5E0800EB22A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA148BB4208F5E0800EB22A4 /* LaunchScreen.storyboard */; };
 		EA148BC1208F5E0800EB22A4 /* PreFRDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BC0208F5E0800EB22A4 /* PreFRDBTests.swift */; };
 		EA148BCC208F5E0800EB22A4 /* PreFRDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BCB208F5E0800EB22A4 /* PreFRDBUITests.swift */; };
+		EA148BDA208FCEC100EB22A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA148BD9208FCEC100EB22A4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EA148BC7208F5E0800EB22A4 /* PreFRDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreFRDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA148BCB208F5E0800EB22A4 /* PreFRDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreFRDBUITests.swift; sourceTree = "<group>"; };
 		EA148BCD208F5E0800EB22A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA148BD9208FCEC100EB22A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FF2D5BD9486A07ABB83854C3 /* Pods_PreFRDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreFRDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		EA148BAA208F5E0400EB22A4 /* PreFRDB */ = {
 			isa = PBXGroup;
 			children = (
+				EA148BD9208FCEC100EB22A4 /* GoogleService-Info.plist */,
 				EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */,
 				EA148BAD208F5E0400EB22A4 /* ViewController.swift */,
 				EA148BAF208F5E0400EB22A4 /* Main.storyboard */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA148BB6208F5E0800EB22A4 /* LaunchScreen.storyboard in Resources */,
+				EA148BDA208FCEC100EB22A4 /* GoogleService-Info.plist in Resources */,
 				EA148BB3208F5E0800EB22A4 /* Assets.xcassets in Resources */,
 				EA148BB1208F5E0400EB22A4 /* Main.storyboard in Resources */,
 			);
@@ -557,7 +561,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = PreFRDB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ka56cd.PreFRDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -573,7 +580,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = PreFRDB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ka56cd.PreFRDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -590,7 +600,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = PreFRDBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ka56cd.PreFRDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -608,7 +622,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = PreFRDBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ka56cd.PreFRDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -625,7 +643,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = PreFRDBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ka56cd.PreFRDBUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -642,7 +664,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZMTZ3U33V;
 				INFOPLIST_FILE = PreFRDBUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cc.ka56cd.PreFRDBUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
