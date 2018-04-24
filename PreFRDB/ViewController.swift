@@ -10,9 +10,11 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-
-//    var ref: = Database.database().reference()
-    fileprivate var ref: DatabaseReference?
+    fileprivate lazy var ref: DatabaseReference = {
+        let realtimeRef: DatabaseReference = Database.database().reference(withPath: "users")
+        realtimeRef.keepSynced(true) // NOTE: データパス指定による同期の有効化
+        return realtimeRef
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,32 +26,33 @@ class ViewController: UIViewController {
 extension ViewController {
 
     fileprivate func prepareFirebase() {
-        ref = Database.database().reference()
+        func observe() {
+            ref.observe(.value) { snapshot in
+                let postDict = snapshot.value as? [String: Any] ?? [:]
+                if postDict.count > 0 {
+                    print("snapshot: \(postDict.debugDescription)")
+                } else {
+                    print("snapshot: empty")
+                }
+            }
+            
+            ref.child("users").child("user2").observe(.value) { snapshot in
+                let postDict = snapshot.value as? [String: Any] ?? [:]
+                if postDict.count > 0 {
+                    print("snapshot ( users -> user2): \(postDict.debugDescription)")
+                } else {
+                    print("snapshot ( users -> user2): empty")
+                }
+            }
+        }
         
-        // observe
-        ref?.observe(.value) { snapshot in
-            let postDict = snapshot.value as? [String: Any] ?? [:]
-            if postDict.count > 0 {
-                print("snapshot: \(postDict.debugDescription)")
-            } else {
-                print("snapshot: empty")
-            }
-        }
-
-        ref?.child("users").child("user2").observe(.value) { snapshot in
-            let postDict = snapshot.value as? [String: Any] ?? [:]
-            if postDict.count > 0 {
-                print("snapshot ( users -> user2): \(postDict.debugDescription)")
-            } else {
-                print("snapshot ( users -> user2): empty")
-            }
-        }
+        observe()
     }
 
     fileprivate func handleFirebase() {
         // insert
-        ref?.child("users").child("user1").setValue(["name": "Alice"])
-        ref?.child("users").child("user2").setValue(["name": "Damo"])
+        ref.child("users").child("user1").setValue(["name": "Alice"])
+        ref.child("users").child("user2").setValue(["name": "Damo"])
     }
 }
 
