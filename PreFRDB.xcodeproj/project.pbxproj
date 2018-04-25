@@ -18,6 +18,10 @@
 		EA028232209010A500022196 /* LinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA028231209010A500022196 /* LinkModel.swift */; };
 		EA0282342090113800022196 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282332090113800022196 /* UserModel.swift */; };
 		EA0282362090118900022196 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282352090118900022196 /* CommentModel.swift */; };
+		EA0282382090150800022196 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282372090150800022196 /* Translator.swift */; };
+		EA02823B2090178D00022196 /* LinkTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02823A2090178D00022196 /* LinkTranslator.swift */; };
+		EA02823D2090183500022196 /* UserTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02823C2090183500022196 /* UserTranslator.swift */; };
+		EA02823F2090188B00022196 /* CommentTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02823E2090188B00022196 /* CommentTranslator.swift */; };
 		EA148BAC208F5E0400EB22A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */; };
 		EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAD208F5E0400EB22A4 /* ViewController.swift */; };
 		EA148BB1208F5E0400EB22A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA148BAF208F5E0400EB22A4 /* Main.storyboard */; };
@@ -67,6 +71,10 @@
 		EA028231209010A500022196 /* LinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkModel.swift; sourceTree = "<group>"; };
 		EA0282332090113800022196 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		EA0282352090118900022196 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		EA0282372090150800022196 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		EA02823A2090178D00022196 /* LinkTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTranslator.swift; sourceTree = "<group>"; };
+		EA02823C2090183500022196 /* UserTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTranslator.swift; sourceTree = "<group>"; };
+		EA02823E2090188B00022196 /* CommentTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTranslator.swift; sourceTree = "<group>"; };
 		EA148BA8208F5E0400EB22A4 /* PreFRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreFRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA148BAD208F5E0400EB22A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,8 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				EA0282282090107200022196 /* DataProvider.swift */,
-				EA0282242090107200022196 /* Repository */,
 				EA0282292090107200022196 /* UseCase */,
+				EA0282242090107200022196 /* Repository */,
+				EA0282392090174000022196 /* Translator */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -176,6 +185,17 @@
 				EA0282352090118900022196 /* CommentModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EA0282392090174000022196 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				EA0282372090150800022196 /* Translator.swift */,
+				EA02823C2090183500022196 /* UserTranslator.swift */,
+				EA02823A2090178D00022196 /* LinkTranslator.swift */,
+				EA02823E2090188B00022196 /* CommentTranslator.swift */,
+			);
+			path = Translator;
 			sourceTree = "<group>";
 		};
 		EA148B9F208F5E0400EB22A4 = {
@@ -480,11 +500,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA02823F2090188B00022196 /* CommentTranslator.swift in Sources */,
 				EA02822B2090107200022196 /* UserRepository.swift in Sources */,
 				EA02822E2090107200022196 /* DataProvider.swift in Sources */,
+				EA02823B2090178D00022196 /* LinkTranslator.swift in Sources */,
 				EA028232209010A500022196 /* LinkModel.swift in Sources */,
 				EA02822D2090107200022196 /* LinkRepository.swift in Sources */,
 				EA148BEC209005E200EB22A4 /* DatabaseReference+.swift in Sources */,
+				EA0282382090150800022196 /* Translator.swift in Sources */,
 				EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */,
 				EA02822F2090107200022196 /* UseCase.swift in Sources */,
 				EA0282362090118900022196 /* CommentModel.swift in Sources */,
@@ -492,6 +515,7 @@
 				EA0282342090113800022196 /* UserModel.swift in Sources */,
 				EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */,
 				EA148BE72090055C00EB22A4 /* Entity.swift in Sources */,
+				EA02823D2090183500022196 /* UserTranslator.swift in Sources */,
 				EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */,
 				EA148BDE2090047F00EB22A4 /* UserEntity.swift in Sources */,
 				EA148BAC208F5E0400EB22A4 /* AppDelegate.swift in Sources */,
