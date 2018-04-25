@@ -18,6 +18,10 @@
 		EA148BC1208F5E0800EB22A4 /* PreFRDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BC0208F5E0800EB22A4 /* PreFRDBTests.swift */; };
 		EA148BCC208F5E0800EB22A4 /* PreFRDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BCB208F5E0800EB22A4 /* PreFRDBUITests.swift */; };
 		EA148BDA208FCEC100EB22A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA148BD9208FCEC100EB22A4 /* GoogleService-Info.plist */; };
+		EA148BDE2090047F00EB22A4 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BDD2090047F00EB22A4 /* UserEntity.swift */; };
+		EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BE1209004DD00EB22A4 /* CommentEntity.swift */; };
+		EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BE32090051200EB22A4 /* LinkEntity.swift */; };
+		EA148BE72090055C00EB22A4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BE62090055C00EB22A4 /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		EA148BCB208F5E0800EB22A4 /* PreFRDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreFRDBUITests.swift; sourceTree = "<group>"; };
 		EA148BCD208F5E0800EB22A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA148BD9208FCEC100EB22A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EA148BDD2090047F00EB22A4 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		EA148BE1209004DD00EB22A4 /* CommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEntity.swift; sourceTree = "<group>"; };
+		EA148BE32090051200EB22A4 /* LinkEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkEntity.swift; sourceTree = "<group>"; };
+		EA148BE62090055C00EB22A4 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		FF2D5BD9486A07ABB83854C3 /* Pods_PreFRDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreFRDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +154,7 @@
 				EA148BB2208F5E0800EB22A4 /* Assets.xcassets */,
 				EA148BB4208F5E0800EB22A4 /* LaunchScreen.storyboard */,
 				EA148BB7208F5E0800EB22A4 /* Info.plist */,
+				EA148BDC2090043F00EB22A4 /* Entity */,
 			);
 			path = PreFRDB;
 			sourceTree = "<group>";
@@ -166,6 +175,25 @@
 				EA148BCD208F5E0800EB22A4 /* Info.plist */,
 			);
 			path = PreFRDBUITests;
+			sourceTree = "<group>";
+		};
+		EA148BDC2090043F00EB22A4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EA148BE52090055C00EB22A4 /* common */,
+				EA148BDD2090047F00EB22A4 /* UserEntity.swift */,
+				EA148BE1209004DD00EB22A4 /* CommentEntity.swift */,
+				EA148BE32090051200EB22A4 /* LinkEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EA148BE52090055C00EB22A4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				EA148BE62090055C00EB22A4 /* Entity.swift */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,12 +336,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PreFRDB/Pods-PreFRDB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -383,7 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */,
+				EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */,
+				EA148BE72090055C00EB22A4 /* Entity.swift in Sources */,
 				EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */,
+				EA148BDE2090047F00EB22A4 /* UserEntity.swift in Sources */,
 				EA148BAC208F5E0400EB22A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
