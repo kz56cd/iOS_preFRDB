@@ -10,15 +10,15 @@ import Foundation
 import RxSwift
 
 struct CommentRepository {
-    let dataStore: UserDataStore
-    func get(with linkId: String) -> Single<UserEntity> {
-        return dataStore.get(key: linkId)
+    let dataStore: CommentDataStore
+    func get() -> Single<CommentEntity> {
+        return dataStore.get()
     }
 }
 
 struct CommentDataStore {
     let provider = DataProvider.shared
-    func get(key: String) -> Single<UserEntity> {
-        return provider.getUser(key: key)
+    func get() -> Single<CommentEntity> {
+        return provider.getComments()
     }
 }

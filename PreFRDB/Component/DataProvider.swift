@@ -26,8 +26,8 @@ extension DataProvider {
     func getLink(key: String) -> Single<LinkEntity> {
         return ref.child(DatabasePath.links.name).child(key).get()
     }
-    func getUser(key: String) -> Single<CommentEntity> {
-        return ref.child(DatabasePath.comments.name).child(key).get()
+    func getComments() -> Single<CommentEntity> {
+        return ref.child(DatabasePath.comments.name).get()
     }
 }
 

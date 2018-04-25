@@ -10,15 +10,15 @@ import Foundation
 import RxSwift
 
 struct LinkRepository {
-    let dataStore: UserDataStore
-    func get(with userId: String) -> Single<UserEntity> {
-        return dataStore.get(key: userId)
+    let dataStore: LinkDataStore
+    func get(linkId: String) -> Single<LinkEntity> {
+        return dataStore.get(key: linkId)
     }
 }
 
 struct LinkDataStore {
     let provider = DataProvider.shared
-    func get(key: String) -> Single<UserEntity> {
-        return provider.getUser(key: key)
+    func get(key: String) -> Single<LinkEntity> {
+        return provider.getLink(key: key)
     }
 }

@@ -11,7 +11,7 @@ import RxSwift
 
 struct UserRepository {
     let dataStore: UserDataStore
-    func get(with userId: String) -> Single<UserEntity> {
+    func get(userId: String) -> Single<UserEntity> {
         return dataStore.get(key: userId)
     }
 }
