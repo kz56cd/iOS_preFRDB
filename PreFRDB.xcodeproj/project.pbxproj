@@ -10,10 +10,14 @@
 		0B86E211D67AE692E58D343E /* Pods_PreFRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD1B3B6FC6055CCD5BFF8E /* Pods_PreFRDB.framework */; };
 		72ADAFECC669EF052E1CD8E6 /* Pods_PreFRDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4A4F3555557491022486E6 /* Pods_PreFRDBTests.framework */; };
 		7AC04B988F7A202AA8D99CE6 /* Pods_PreFRDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D5BD9486A07ABB83854C3 /* Pods_PreFRDBUITests.framework */; };
-		EA0282182090095D00022196 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282172090095D00022196 /* DataProvider.swift */; };
-		EA02821C20900D2D00022196 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02821B20900D2D00022196 /* UserRepository.swift */; };
-		EA02821E20900E2C00022196 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02821D20900E2C00022196 /* CommentRepository.swift */; };
-		EA02822020900EDF00022196 /* LinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02821F20900EDF00022196 /* LinkRepository.swift */; };
+		EA02822B2090107200022196 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282252090107200022196 /* UserRepository.swift */; };
+		EA02822C2090107200022196 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282262090107200022196 /* CommentRepository.swift */; };
+		EA02822D2090107200022196 /* LinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282272090107200022196 /* LinkRepository.swift */; };
+		EA02822E2090107200022196 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282282090107200022196 /* DataProvider.swift */; };
+		EA02822F2090107200022196 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02822A2090107200022196 /* UseCase.swift */; };
+		EA028232209010A500022196 /* LinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA028231209010A500022196 /* LinkModel.swift */; };
+		EA0282342090113800022196 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282332090113800022196 /* UserModel.swift */; };
+		EA0282362090118900022196 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282352090118900022196 /* CommentModel.swift */; };
 		EA148BAC208F5E0400EB22A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */; };
 		EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAD208F5E0400EB22A4 /* ViewController.swift */; };
 		EA148BB1208F5E0400EB22A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA148BAF208F5E0400EB22A4 /* Main.storyboard */; };
@@ -55,10 +59,14 @@
 		6751C134154C77D2C0F16D17 /* Pods-PreFRDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreFRDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreFRDBTests/Pods-PreFRDBTests.release.xcconfig"; sourceTree = "<group>"; };
 		C9C85A3F0BF6ECF288BD7337 /* Pods-PreFRDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreFRDBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreFRDBUITests/Pods-PreFRDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AD1B3B6FC6055CCD5BFF8E /* Pods_PreFRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreFRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0282172090095D00022196 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		EA02821B20900D2D00022196 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
-		EA02821D20900E2C00022196 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
-		EA02821F20900EDF00022196 /* LinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRepository.swift; sourceTree = "<group>"; };
+		EA0282252090107200022196 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		EA0282262090107200022196 /* CommentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		EA0282272090107200022196 /* LinkRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkRepository.swift; sourceTree = "<group>"; };
+		EA0282282090107200022196 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		EA02822A2090107200022196 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		EA028231209010A500022196 /* LinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkModel.swift; sourceTree = "<group>"; };
+		EA0282332090113800022196 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EA0282352090118900022196 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		EA148BA8208F5E0400EB22A4 /* PreFRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreFRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA148BAD208F5E0400EB22A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,31 +140,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EA0282162090094400022196 /* Components */ = {
+		EA0282232090107200022196 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				EA0282172090095D00022196 /* DataProvider.swift */,
-				EA02821920900D1600022196 /* Repository */,
-				EA02821A20900D1600022196 /* UseCase */,
+				EA0282282090107200022196 /* DataProvider.swift */,
+				EA0282242090107200022196 /* Repository */,
+				EA0282292090107200022196 /* UseCase */,
 			);
-			path = Components;
+			path = Component;
 			sourceTree = "<group>";
 		};
-		EA02821920900D1600022196 /* Repository */ = {
+		EA0282242090107200022196 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				EA02821B20900D2D00022196 /* UserRepository.swift */,
-				EA02821F20900EDF00022196 /* LinkRepository.swift */,
-				EA02821D20900E2C00022196 /* CommentRepository.swift */,
+				EA0282252090107200022196 /* UserRepository.swift */,
+				EA0282262090107200022196 /* CommentRepository.swift */,
+				EA0282272090107200022196 /* LinkRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		EA02821A20900D1600022196 /* UseCase */ = {
+		EA0282292090107200022196 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				EA02822A2090107200022196 /* UseCase.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		EA0282302090109600022196 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA0282332090113800022196 /* UserModel.swift */,
+				EA028231209010A500022196 /* LinkModel.swift */,
+				EA0282352090118900022196 /* CommentModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EA148B9F208F5E0400EB22A4 = {
@@ -191,7 +210,8 @@
 				EA148BB2208F5E0800EB22A4 /* Assets.xcassets */,
 				EA148BB4208F5E0800EB22A4 /* LaunchScreen.storyboard */,
 				EA148BB7208F5E0800EB22A4 /* Info.plist */,
-				EA0282162090094400022196 /* Components */,
+				EA0282232090107200022196 /* Component */,
+				EA0282302090109600022196 /* Model */,
 				EA148BDC2090043F00EB22A4 /* Entity */,
 				EA148BE8209005C300EB22A4 /* Extension */,
 			);
@@ -460,12 +480,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA02822020900EDF00022196 /* LinkRepository.swift in Sources */,
+				EA02822B2090107200022196 /* UserRepository.swift in Sources */,
+				EA02822E2090107200022196 /* DataProvider.swift in Sources */,
+				EA028232209010A500022196 /* LinkModel.swift in Sources */,
+				EA02822D2090107200022196 /* LinkRepository.swift in Sources */,
 				EA148BEC209005E200EB22A4 /* DatabaseReference+.swift in Sources */,
 				EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */,
-				EA02821C20900D2D00022196 /* UserRepository.swift in Sources */,
-				EA02821E20900E2C00022196 /* CommentRepository.swift in Sources */,
-				EA0282182090095D00022196 /* DataProvider.swift in Sources */,
+				EA02822F2090107200022196 /* UseCase.swift in Sources */,
+				EA0282362090118900022196 /* CommentModel.swift in Sources */,
+				EA02822C2090107200022196 /* CommentRepository.swift in Sources */,
+				EA0282342090113800022196 /* UserModel.swift in Sources */,
 				EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */,
 				EA148BE72090055C00EB22A4 /* Entity.swift in Sources */,
 				EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */,
