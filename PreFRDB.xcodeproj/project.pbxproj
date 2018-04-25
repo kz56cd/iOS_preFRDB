@@ -11,6 +11,9 @@
 		72ADAFECC669EF052E1CD8E6 /* Pods_PreFRDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4A4F3555557491022486E6 /* Pods_PreFRDBTests.framework */; };
 		7AC04B988F7A202AA8D99CE6 /* Pods_PreFRDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D5BD9486A07ABB83854C3 /* Pods_PreFRDBUITests.framework */; };
 		EA0282182090095D00022196 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282172090095D00022196 /* DataProvider.swift */; };
+		EA02821C20900D2D00022196 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02821B20900D2D00022196 /* UserRepository.swift */; };
+		EA02821E20900E2C00022196 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02821D20900E2C00022196 /* CommentRepository.swift */; };
+		EA02822020900EDF00022196 /* LinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02821F20900EDF00022196 /* LinkRepository.swift */; };
 		EA148BAC208F5E0400EB22A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */; };
 		EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAD208F5E0400EB22A4 /* ViewController.swift */; };
 		EA148BB1208F5E0400EB22A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA148BAF208F5E0400EB22A4 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 		C9C85A3F0BF6ECF288BD7337 /* Pods-PreFRDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreFRDBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreFRDBUITests/Pods-PreFRDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AD1B3B6FC6055CCD5BFF8E /* Pods_PreFRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreFRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0282172090095D00022196 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		EA02821B20900D2D00022196 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		EA02821D20900E2C00022196 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		EA02821F20900EDF00022196 /* LinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRepository.swift; sourceTree = "<group>"; };
 		EA148BA8208F5E0400EB22A4 /* PreFRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreFRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA148BAD208F5E0400EB22A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,8 +136,27 @@
 			isa = PBXGroup;
 			children = (
 				EA0282172090095D00022196 /* DataProvider.swift */,
+				EA02821920900D1600022196 /* Repository */,
+				EA02821A20900D1600022196 /* UseCase */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		EA02821920900D1600022196 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EA02821B20900D2D00022196 /* UserRepository.swift */,
+				EA02821F20900EDF00022196 /* LinkRepository.swift */,
+				EA02821D20900E2C00022196 /* CommentRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA02821A20900D1600022196 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		EA148B9F208F5E0400EB22A4 = {
@@ -435,8 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA02822020900EDF00022196 /* LinkRepository.swift in Sources */,
 				EA148BEC209005E200EB22A4 /* DatabaseReference+.swift in Sources */,
 				EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */,
+				EA02821C20900D2D00022196 /* UserRepository.swift in Sources */,
+				EA02821E20900E2C00022196 /* CommentRepository.swift in Sources */,
 				EA0282182090095D00022196 /* DataProvider.swift in Sources */,
 				EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */,
 				EA148BE72090055C00EB22A4 /* Entity.swift in Sources */,
