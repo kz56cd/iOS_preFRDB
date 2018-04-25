@@ -10,6 +10,7 @@
 		0B86E211D67AE692E58D343E /* Pods_PreFRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AD1B3B6FC6055CCD5BFF8E /* Pods_PreFRDB.framework */; };
 		72ADAFECC669EF052E1CD8E6 /* Pods_PreFRDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4A4F3555557491022486E6 /* Pods_PreFRDBTests.framework */; };
 		7AC04B988F7A202AA8D99CE6 /* Pods_PreFRDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D5BD9486A07ABB83854C3 /* Pods_PreFRDBUITests.framework */; };
+		EA0282182090095D00022196 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0282172090095D00022196 /* DataProvider.swift */; };
 		EA148BAC208F5E0400EB22A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */; };
 		EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BAD208F5E0400EB22A4 /* ViewController.swift */; };
 		EA148BB1208F5E0400EB22A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA148BAF208F5E0400EB22A4 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BE1209004DD00EB22A4 /* CommentEntity.swift */; };
 		EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BE32090051200EB22A4 /* LinkEntity.swift */; };
 		EA148BE72090055C00EB22A4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BE62090055C00EB22A4 /* Entity.swift */; };
+		EA148BEC209005E200EB22A4 /* DatabaseReference+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA148BEB209005E200EB22A4 /* DatabaseReference+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		6751C134154C77D2C0F16D17 /* Pods-PreFRDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreFRDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PreFRDBTests/Pods-PreFRDBTests.release.xcconfig"; sourceTree = "<group>"; };
 		C9C85A3F0BF6ECF288BD7337 /* Pods-PreFRDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreFRDBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PreFRDBUITests/Pods-PreFRDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AD1B3B6FC6055CCD5BFF8E /* Pods_PreFRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreFRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0282172090095D00022196 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		EA148BA8208F5E0400EB22A4 /* PreFRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreFRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA148BAB208F5E0400EB22A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA148BAD208F5E0400EB22A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		EA148BE1209004DD00EB22A4 /* CommentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEntity.swift; sourceTree = "<group>"; };
 		EA148BE32090051200EB22A4 /* LinkEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkEntity.swift; sourceTree = "<group>"; };
 		EA148BE62090055C00EB22A4 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		EA148BEB209005E200EB22A4 /* DatabaseReference+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+.swift"; sourceTree = "<group>"; };
 		FF2D5BD9486A07ABB83854C3 /* Pods_PreFRDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreFRDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA0282162090094400022196 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA0282172090095D00022196 /* DataProvider.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		EA148B9F208F5E0400EB22A4 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +166,9 @@
 				EA148BB2208F5E0800EB22A4 /* Assets.xcassets */,
 				EA148BB4208F5E0800EB22A4 /* LaunchScreen.storyboard */,
 				EA148BB7208F5E0800EB22A4 /* Info.plist */,
+				EA0282162090094400022196 /* Components */,
 				EA148BDC2090043F00EB22A4 /* Entity */,
+				EA148BE8209005C300EB22A4 /* Extension */,
 			);
 			path = PreFRDB;
 			sourceTree = "<group>";
@@ -194,6 +208,14 @@
 				EA148BE62090055C00EB22A4 /* Entity.swift */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		EA148BE8209005C300EB22A4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA148BEB209005E200EB22A4 /* DatabaseReference+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,7 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA148BEC209005E200EB22A4 /* DatabaseReference+.swift in Sources */,
 				EA148BE42090051200EB22A4 /* LinkEntity.swift in Sources */,
+				EA0282182090095D00022196 /* DataProvider.swift in Sources */,
 				EA148BE2209004DD00EB22A4 /* CommentEntity.swift in Sources */,
 				EA148BE72090055C00EB22A4 /* Entity.swift in Sources */,
 				EA148BAE208F5E0400EB22A4 /* ViewController.swift in Sources */,
